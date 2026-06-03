@@ -1,11 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Thárcio - Portfolio</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
 <body>
-    
+    <header class="header" id="header">
+        <a href="#" class="logo">Port<span>folio</span></a>
+        <ul class="nav-items">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-burger">
+            <i class="fa-solid fa-bars burger"></i>
+            <ul class="nav-items-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- SECÇÃO HERO -->
+    <main class="hero secao" id="hero">
+        <div class="hero-img esconder">
+            <img src="IMG/WhatsApp Image 2026-06-02 at 00.55.36.jpeg" alt="myImg">
+        </div>
+        <div class="hero-info esconder">
+            <h1 class="apresentation">Olá, eu sou o <span style="color: #00bfff;font-weight: 700;">Thárcio</span></h1>
+            <h2 class="experience-info text-animado">Eu sou <span></span></h2>
+            <p>
+                Eu sou um programador junior, entrei há um ano na área de programação, tenho experiências na criação de
+                páginas web, API's e estou no processo de aprendizado de Apps mobile
+            </p>
+            <ul class="media-icons">
+                <li><a href="https://github.com/TharcioGoncalves"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/brazuca.junior.7"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/tharcio_goncalves"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li><a href="https://wa.me/244947976480"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+            <div class="buttons">
+                <button class="aboutMe"><a href="#about">About Me</a></button>
+                <button class="ligue"><a href="tel:+244947976480"><span>Call me</span><i
+                            class="fa-solid fa-phone"></i></a></button>
+            </div>
+        </div>
+    </main>
+    <!-- SECÇÃO ABOUT(SOBRE MIM) -->
+    <section id="about" class="secao">
+        <div class="aboutInfo">
+            <h2 class="aboutMainText">About <span style="color: #00bfff;">Me</span></h2>
+            <h2 class="area-info">Junior Developer</h2>
+            <p>Sou web Designer e Desenvolvedor Java, focado na criação de sites completos(Com backend e frontend) e
+                responsivos,sendo que backend é feito com a linguagem de programação java.Nos últimos 2 anos tenho
+                focado no estudo de desenvolvimento de Apps Web, já criei 5 sites, incluindo um crud feito com java
+                Spring boot.Tenho experiência com Bootstrap, C e integração com APIs Rest.Procuro meu primeiro emprego
+                na área da programação.Caso esteja interessado nas minhas habilidades, envie uma mensagem no WhatsApp
+            </p>
+            <button class="visit"><a href="https://github.com/TharcioGoncalves"><span>Visite</span><i
+                        class="fa-brands fa-github"></i></a></button>
+        </div>
+        <div class="aboutImg">
+            <img src="IMG/WhatsApp Image 2026-06-03 at 01.05.00.jpeg" alt="foto do sung">
+        </div>
+    </section>
+    <!-- SECTION EXPERIENCE -->
+    <section id="experience" class="secao">
+        <div class="experience-info">
+            <h2 class="expeirince-mainText">My <span>Experiences</span></h2>
+            <p>Estás são as áreas que tenho maior experiência na programação</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-title">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                </div>
+                <p class="card-info">
+                    Experiência em HTML, CSS, JavaScript e Bootstrap.Tenho noções sobre React, Angular e Tailwind
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend Development</h2>
+                </div>
+                <p class="card-info">
+                    Experiência em Java, PHP, e Node JS .Tenho noções sobre Laravel e Spring boot
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Banco de Dados</h2>
+                </div>
+                <p class="card-info">
+                    Experiência com SQL Server, MySQL, MongoDB.Caminhando para o aprendizado de NoSQL
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="secao">
+        <div class="program-skills">
+            <h2>My <span>Skills</span></h2>
+            <h4>Estás são as barras de progresso que apresentam o me nível de conhecimento das linguagens e ferramentas
+                de programação</h4>
+            <div class="barras-progresso">
+                <ul class="barras">
+                    <li>
+                        <div class="info">
+                            <h3>HTML</h3>
+                            <p>92%</p>
+                        </div>
+                        <div class="barra">
+                            <div class="html"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h3>CSS</h3>
+                            <p>70%</p>
+                        </div>
+                        <div class="barra">
+                            <div class="css"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h3>JavaScript</h3>
+                            <p>61%</p>
+                        </div>
+                        <div class="barra">
+                            <div class="js"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h3>JAVA</h3>
+                            <p>66%</p>
+                        </div>
+                        <div class="barra">
+                            <div class="java"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="circular-effect">
+            <div class="circular c1">
+                <div class="barra-circuclar">
+                    <div class="language">En</div>
+                </div>
+            </div>
+            <div class="circular c2">
+                <div class="barra-circuclar">
+                    <div class="language">Pt</div>
+                </div>
+            </div>
+            <div class="circular c3">
+                <div class="barra-circuclar">
+                    <div class="language">Es</div>
+                </div>
+            </div>
+            <div class="circular c4">
+                <div class="barra-circuclar">
+                    <div class="language">Zh</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="rodape secao" id="contact">
+        <div class="social-info">
+            <a href="#" class="logo">Port<span>folio</span></a>
+            <p>Este é o meu protfolio profissional, cujo serve para apresentar as minhas habilidades</p>
+
+            <ul class="media-icons" style="margin-top: 20px;">
+                <li><a href="https://github.com/TharcioGoncalves"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/brazuca.junior.7"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/tharcio_goncalves"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li><a href="https://wa.me/244947976480"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="links-info">
+            <h2>Links</h2>
+            <ul class="nav-items2">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="endereco-info">
+            <h2>Endereço</h2>
+            <ul class="location">
+                <li><i class="fa-solid fa-location-pin"></i>Bengo, Dande, Centralidade Capari</li>
+                <li><i class="fa-solid fa-phone"></i>+244 947976480</li>
+                <li><i class="fa-regular fa-envelope"></i>tharciogoncalves413"gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="JS/script.js"></script>
 </body>
+
 </html>
